@@ -1,52 +1,63 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <title>Gelenias Patriot Press </title> 
-    <style>
-                body {
-                            
-                            background-color: black;
-                            
-                    
-                    }
-                    #logo {
-                        
-                            margin:  20%;
-                            margin-left: 45%;
-                            margin-top: 15%;
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                
-                        }
-                        #loader {
-                                                                                
-                                       margin-right:45%;
-                                       margin-left: 45%;
-                                       margin-top: 10%:
-                                       margin-bottom: 45%:
-                                       
-                                       
-                                       
-                                        
-                                
-                            }
-    </style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("#div1").fadeIn(3000);
+    $("#div2").fadeIn(4000);
+    $("#div3").fadeIn(5000);
+
+});  
+
+function exitBootupScreen(/* This is the function that exits the IZO5 Bootup Screen*/) 
+		{ 
+				
+				window.location.replace("home.html");
+		
+		} 
+		setInterval(exitBootupScreen,4000);
+</script> 
+
+<style>  
+
+			body { 
+				
+						background-color: black; 
+						
+				
+			} 
+			#div1 { 
+				
+						margin-top: 30%; 
+						
+				
+				}
+			
+</style>
+
+
+
+
 </head>
 
 <body>
-                    
-        <img src = "https://cdn3.iconfinder.com/data/icons/seo-internet-marketing-2-3/256/Social_Media_Press_Release-512.png" width = "10%" height = "10%" id = "logo">
-        <img src = "loader.gif" id = "loader">
 
-        
-        
+<font size = "5%"> 
+	<center> 
+		<br> 
+		<br> 
+		<br> 
+		<br> 
+		<br> 
+		<br> 
+		<br> 
+		<br>
+<span id="div1" style="width:80px;height:80px;display:none;color:white;"> Gelinas</div>
+<span id="div2" style="width:80px;height:80px;display:none;color:white;"> Patriot </div>
+<span id="div3" style="width:80px;height:80px;display:none;color:white;"> Press</div> 
+	</center>
 
 </body>
 </html>
